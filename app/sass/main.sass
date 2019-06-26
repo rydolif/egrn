@@ -1,0 +1,391 @@
+@import "libs"
+@import "base"
+
+
+.header
+	position: fixed
+	right: 0
+	left: 0
+	color: #ffffff
+	background-color: #2c3040
+	padding: 20px 0
+	transition: all .3s
+	z-index: 1001
+
+	&--active
+		background-color: rgba(#2c3040, .9)
+		padding: 5px 0
+
+
+	&__container
+		position: relative
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	
+	&__logo
+		a
+			display: flex
+			align-items: center
+
+	&__title
+		line-height: 1.1
+		padding-left: 13px
+		color: #fff
+		p
+			font-size: 23px
+
+			&:nth-child(2)
+				font-size: 16px
+				font-weight: 300
+
+	&__text
+		padding-left: 100px
+		font-size: 14px
+
+.main
+	padding-top: 125px
+
+.hero
+
+	&__form
+		width: 100%
+		background-color: #fff
+		padding: 55px 35px 25px
+		display: flex
+		flex-direction: column
+
+		p
+			font-size: 25px
+			line-height: 1.1
+
+		span
+			color: #5a5a5a
+			font-size: 17px
+			font-weight: 300
+			padding-bottom: 25px
+
+			&:nth-child(3)
+				padding-bottom: 5px
+
+		&_input
+			display: flex
+
+		&_btn
+			position: relative
+			right: 2px
+			width: 13%
+			background-color: #ff2b2b
+			border: 1px solid transparent
+			font-size: 20px
+			font-weight: 700
+			color: #ffffff
+
+			&:hover,
+			&:focus
+				background-color: #3fddff
+				color: #fff
+				border-color: transparent
+				transition: all .7s
+				cursor: pointer
+
+		a
+			font-size: 18px
+			padding-top: 10px
+			color: #3fddff
+			text-decoration: underline
+			
+			&:hover,
+			&:focus
+				text-decoration: none
+				transition: all .9s
+
+
+		&_list
+			display: flex
+			justify-content: space-between
+			padding-top: 30px
+
+		&_item
+			padding: 10px 0 
+
+			&:nth-child(1)
+				width: 27%
+
+			&:nth-child(2)
+				width: 23%
+
+			&:nth-child(3)
+				width: 21%
+
+			&:nth-child(4)
+				width: 26%
+
+			span
+				font-size: 28px
+				font-weight: 700
+				opacity: 0.15
+
+			p
+				font-size: 15px
+
+	.hero__list
+		display: none
+
+.tabs
+	padding-top: 55px
+	padding-bottom: 60px
+
+	h3
+		font-size: 25px
+		padding-bottom: 25px
+
+	&__nav
+		display: flex
+		padding-bottom: 30px
+
+		li
+
+			.active
+				background-color: #3fddff
+				color: #fff
+			
+			&:nth-child(1)
+				a
+					border-right: none
+					border-radius: 5px 0 0 5px
+
+			&:nth-child(2)
+				a
+					border-right: none
+
+			&:nth-child(3)
+				a
+					border-radius: 0 5px 5px 0			
+
+			a
+				color: #000000
+				font-size: 16px
+				border: 1px solid #787878
+				padding: 10px 15px
+
+				&:hover,
+				&:active,
+				&:focus
+					background-color: #3fddff
+					color: #fff
+					transition: all .5s
+
+	&__wrap
+		display: flex
+		align-items: center
+
+		&_text
+			padding-right: 60px
+			font-size: 18px
+
+			p
+				padding-bottom: 25px
+
+				&:last-child
+					padding-bottom: 0
+					padding-left: 25px
+					font-size: 19px
+
+			li
+				line-height: 2.2
+
+				s
+					color: #c6c6c6
+
+				&:last-child
+					padding-bottom: 25px
+
+			img
+				padding-right: 10px
+
+			span
+				color: #828282
+		
+		&_sample
+			position: relative
+			text-align: center
+			z-index: 1
+			&::before
+				content: ''
+				position: absolute
+				right: -20px
+				top: 20px
+				bottom: -20px
+				left: -20px
+				border: 1px solid #d1d1d1
+				z-index: -1
+
+			p
+				padding-bottom: 10px
+				background-color: #ededed
+
+.ways
+	position: relative
+	border: 1px solid #dbdbdb
+	padding-top: 30px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+
+	&__item
+		width: 16%
+		padding-bottom: 30px
+		display: flex
+		justify-content: center
+
+.footer
+	background-color: #2c3040
+	padding: 20px 0
+	
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		a
+			color: #ffffff
+			text-decoration: underline
+			font-size: 16px
+
+			&:hover,
+			&:focus
+				text-decoration: none
+				transition: all .9s
+	
+	&__link
+		display: none
+
+	.header__logo
+		a
+			text-decoration: none
+
+.link
+	padding: 128px 0 50px 0
+
+	&__container
+		position: relative
+
+	a
+		color: #6f6f6f
+		font-size: 14px
+
+		&:first-child
+			padding-right: 10px
+			text-decoration: underline
+
+			&:hover,
+			&:focus
+				text-decoration: none
+				transition: all .5s
+
+	img
+		padding-right: 10px
+
+.answer
+	padding-bottom: 60px
+
+	p
+		font-size: 35px
+
+	span
+		font-size: 20px
+		color: #474747
+		font-weight: 300
+
+	&__list
+		padding-top: 20px
+
+		.active
+			background-color: #fff
+			transition: all .5s
+
+			.answer__header
+
+				span
+					background-color: #c1c1c1
+					transition: all .5s
+
+				&_change
+
+					&::before
+						transform: rotate(-50deg)
+						transition: all .6s
+						
+					&::after
+						transform: rotate(230deg)
+						transition: all .6s
+
+
+	&__item
+		background-color: #dfdfdf
+		margin-bottom: 15px
+		border-radius: 10px
+
+		&:last-child
+			margin-bottom: 0
+
+		&:hover,
+		&:focus
+			background-color: #ffffff
+			cursor: pointer
+
+	&__header
+		position: relative
+		padding: 20px 72px
+
+		p
+			font-size: 22px
+
+		span
+			background-color: #3fddff
+			font-size: 15px
+			border-radius: 45px
+			padding: 12px 15px
+			color: #fefefe
+			position: absolute
+			top: 11px
+			left: -20px
+
+		&_change
+
+			&::before
+				content: ''
+				position: absolute
+				right: 31px
+				top: 35px
+				transform: rotate(45deg)
+				width: 15px
+				height: 3px
+				background-color: #929292
+				transition: all .6s
+
+			&::after
+				content: ''
+				position: absolute
+				right: 40px
+				top: 35px
+				transform: rotate(130deg)
+				width: 15px
+				height: 3px
+				background-color: #929292
+				transition: all .6s
+
+	&__dropdown
+		padding: 0px 72px 20px
+
+		p
+			font-size: 17px
+			line-height: 1.5
+
+
+@import "page"
+@import "media" // Always at the end

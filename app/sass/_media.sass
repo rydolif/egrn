@@ -1,0 +1,365 @@
+
+@media only screen and (max-width : 1200px)
+
+	.header
+
+@media only screen and (max-width : 992px)
+	
+	.header
+
+		&__title
+			white-space: nowrap
+			padding-left: 7px
+
+			p
+				font-size: 20px
+
+		&__text
+			padding-left: 15px
+			font-weight: 300
+
+			br
+				display: none
+
+	.hero
+
+		&__form
+			padding: 30px 20px 25px
+
+			&_btn
+				width: 18%
+
+			&_list
+				display: flex
+				flex-wrap: wrap
+				padding-top: 20px
+
+			&_item
+
+				&:nth-child(1)
+					width: 46%
+
+				&:nth-child(2)
+					width: 46%
+
+				&:nth-child(3)
+					width: 46%
+
+				&:nth-child(4)
+					width: 46%
+
+	.ways
+
+		&__item
+			width: 24%
+
+	.footer
+
+		a
+			display: none
+
+		&__link
+			display: block
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			align-items: center
+
+			a
+				display: block
+
+	.answer
+
+		span
+			font-size: 18px
+
+		&__header
+			padding: 20px 41px
+
+			p
+				font-size: 20px
+
+		&__dropdown
+			padding: 0 40px 20px
+
+			p
+				font-size: 16px
+
+@media only screen and (max-width : 767px)
+
+	.header
+		position: relative
+
+		&__text
+			font-size: 11px
+
+	.main
+		padding-top: 20px
+
+	.hero
+
+		&__form
+
+			&_btn
+				width: 32%
+
+	.ways
+
+		&__item
+			width: 27%
+
+	.tabs
+		padding-bottom: 25px
+
+		&__nav
+
+			li
+				a
+					padding: 10px 10px
+
+		&__wrap
+
+			&_text
+				font-size: 16px
+				line-height: 1.2
+
+				li
+					line-height: 1.8
+
+	.link
+		padding: 20px 0
+
+	.answer
+
+		&__item
+			
+			&:nth-child(1)
+				span
+					top: 23px
+
+			&:nth-child(5)
+				span
+					top: 23px
+
+@media only screen and (max-width : 576px)
+
+	.header
+		
+		&__container
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+
+		&__text
+			padding-top: 10px
+			padding-left: 0
+			font-size: 13px
+
+	.hero
+
+		&__form
+
+			p
+				font-weight: 700
+				font-size: 23px
+
+			&_input
+				display: flex
+				flex-direction: column
+
+				input
+					width: 100%
+
+			&_btn
+				margin-top: 15px
+			
+			&_list
+				display: none
+
+			&_item
+
+				&:nth-child(1)
+					width: 100%
+
+				&:nth-child(2)
+					width: 100%
+
+				&:nth-child(3)
+					width: 100%
+
+				&:nth-child(4)
+					width: 100%
+
+				p
+					font-size: 18px
+
+		.hero__list
+			display: block
+	
+	.tabs
+		padding-top: 20px
+
+		&__nav
+			li
+				a
+					font-size: 14px
+					font-weight: 500
+
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+	
+			&_text
+				padding-right: 0
+				p
+					&:last-child
+						padding-bottom: 15px
+
+	.footer
+
+		&__container
+			display: flex
+			flex-direction: column
+
+		&__link
+			padding-top: 10px
+
+	.answer
+		padding-bottom: 25px
+
+		p
+			font-size: 30px
+
+		span
+			font-size: 15px
+
+		&__header
+
+			p
+				font-size: 18px
+
+			span
+				left: -15px
+
+			&_change
+				&::before
+					right: 16px
+
+				&::after
+					right: 25px
+		
+		&__dropdown
+			padding: 0 25px 20px
+
+			p
+				font-size: 15px
+
+@media only screen and (max-width : 480px)
+
+	.header
+
+		&__text
+			font-size: 11px
+
+	.hero
+
+		&__form
+
+			p
+				font-size: 18px
+
+			span
+				font-size: 15px
+
+		.hero__list
+
+			p
+				font-size: 15px
+
+	.tabs
+
+		&__nav
+			display: flex
+			flex-wrap: wrap
+
+			li
+				display: flex
+				flex-wrap: wrap
+				text-align: center
+
+				a
+					padding: 10px 0
+
+				&:nth-child(1)
+					width: 50%
+					a
+						border-radius: 5px 0 0 0
+						border-bottom: none
+						text-align: center
+						width: 100%
+
+				&:nth-child(2)
+					width: 50%
+					a
+						border-right: 1px solid #000
+						border-radius: 0 5px 0 0
+						border-bottom: none
+						text-align: center
+						width: 100%
+
+				&:nth-child(3)
+					width: 100%
+					a
+						border-radius: 0 0 5px 5px
+						padding: 10px 0
+						text-align: center
+						width: 100%
+
+		&__wrap
+
+			&_text
+
+				p
+					padding-bottom: 10px
+
+	.ways
+		display: none
+
+	.answer
+
+		&__item
+
+			&:nth-child(1)
+				span
+					top: 16px
+
+			&:nth-child(5)
+				span
+					top: 24px
+
+
+		&__header
+			padding: 20px 30px 20px 28px
+
+			p
+				font-size: 14px
+
+			span
+				font-size: 12px
+				padding: 8px 9px
+
+			&_change
+				&::before
+					right: 5px
+					top: 26px
+				&::after
+					right: 14px
+					top: 26px
+
+	input, textarea
+		padding: 0 10px
+
+		&::placeholder
+			font-size: 12px
